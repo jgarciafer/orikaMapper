@@ -1,4 +1,4 @@
-package com.boogastudio;
+package com.boogastudio.another;
 
 import ma.glasnost.orika.CustomMapper;
 import ma.glasnost.orika.MapperFacade;
@@ -57,72 +57,4 @@ public class Mapper  {
         System.exit(0);
     }
 
-    private static class OrikaMapFrom {
-        private String source;
-        private String destination;
-        private Date dateOfDeparture;
-        private Date dateOfArrival;
-
-        public void setSource(String source) {
-            this.source = source;
-        }
-
-        public String getSource() {
-            return source;
-        }
-
-        public void setDestination(String destination) {
-            this.destination = destination;
-        }
-
-        public String getDestination() {
-            return destination;
-        }
-
-        public void setDateOfDeparture(Date dateOfDeparture) {
-            this.dateOfDeparture = dateOfDeparture;
-        }
-
-        public Date getDateOfDeparture() {
-            return dateOfDeparture;
-        }
-
-        public void setDateOfArrival(Date dateOfArrival) {
-            this.dateOfArrival = dateOfArrival;
-        }
-
-        public Date getDateOfArrival() {
-            return dateOfArrival;
-        }
-    }
-
-    private static class OrikaMapTo {
-        private int travelDuration;
-        private boolean sourcePlace;
-        private boolean destinationPlace;
-
-        public void setTravelDuration(int travelDuration) {
-            this.travelDuration = travelDuration;
-        }
-
-        public int getTravelDuration() {
-            return travelDuration;
-        }
-
-        public boolean getSourcePlace() {
-            return sourcePlace;
-        }
-
-        public void setSourcePlace(boolean sourcePlace) {
-            this.sourcePlace = sourcePlace;
-        }
-
-        public boolean getDestinationPlace() {
-            return destinationPlace;
-        }
-
-        public void setDestinationPlace(boolean destinationPlace) {
-            this.destinationPlace = destinationPlace;
-        }
-    }
 }

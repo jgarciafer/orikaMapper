@@ -1,5 +1,6 @@
 package com.boogastudio;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -8,6 +9,9 @@ public class PersonDto {
     private String lastName;
     private Date birthDate;
     private String[][] aliases;
+    private Date dateMarried;
+    private Boolean married;
+    private LocalDate dateOfWedding;
 
     public String getFirstName() {
         return firstName;
@@ -34,6 +38,30 @@ public class PersonDto {
         this.aliases = aliases;
     }
 
+    public Date getDateMarried() {
+        return dateMarried;
+    }
+
+    public void setDateMarried(Date dateMarried) {
+        this.dateMarried = dateMarried;
+    }
+
+    public Boolean getMarried() {
+        return married;
+    }
+
+    public void setMarried(Boolean married) {
+        this.married = married;
+    }
+
+    public LocalDate getDateOfWedding() {
+        return dateOfWedding;
+    }
+
+    public void setDateOfWedding(LocalDate dateOfWedding) {
+        this.dateOfWedding = dateOfWedding;
+    }
+
     @Override
     public String toString() {
         return "PersonDto{" +
@@ -41,6 +69,9 @@ public class PersonDto {
                 ", lastName='" + lastName + '\'' +
                 ", birthDate=" + birthDate +
                 ", aliases=" + Arrays.toString(aliases) +
+                ", dateMarried=" + dateMarried +
+                ", married=" + married +
+                ", dateOfWedding=" + dateOfWedding +
                 '}';
     }
 }
